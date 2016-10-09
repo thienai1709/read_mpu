@@ -46,7 +46,7 @@ void I2CInit(void) {
     I2CMasterInitExpClk(I2C1_BASE, SysCtlClockGet(), true); // Enable and set frequency to 400 kHz
     SysCtlDelay(2); // Insert a few cycles after enabling the I2C to allow the clock to be fully activated
 }
-
+//asdffghjjkklll
 // Write data to I2C module function, upon one byte data
 void write_mpu(uint8_t addr, uint8_t regAddr, uint8_t *data, uint8_t lenght) {
 	I2CMasterSlaveAddrSet(I2C1_BASE, addr, false); // Set to write mode
@@ -143,3 +143,4 @@ void main() {
 		UARTprintf("Gia toc theo truc X: %d\n",accelX);
 	}
 }
+// adfdsfdgfgj
